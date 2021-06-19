@@ -21,6 +21,10 @@
                      interface="org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalTradeOrderService"
                      timeout="10000" check="false"/>
 
+    <dubbo:reference id="capitalAccountService"
+                     interface="org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService"
+                     timeout="10000" check="false"/>
+
     <dubbo:reference id="redPacketTradeOrderService"
                      interface="org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketTradeOrderService"
                      timeout="10000" check="false"/>
@@ -28,9 +32,4 @@
     <dubbo:reference id="redPacketAccountService"
                      interface="org.mengyun.tcctransaction.sample.dubbo.redpacket.api.RedPacketAccountService"
                      timeout="10000" check="false"/>
-
-    <dubbo:reference id="capitalAccountService"
-                     interface="org.mengyun.tcctransaction.sample.dubbo.capital.api.CapitalAccountService"
-                     timeout="10000" check="false"/>
-
 </beans>
